@@ -4,6 +4,7 @@ import { EpisodeCard } from "@/components/EpisodeCard";
 import { Section } from "@/components/Section";
 import { Footer } from "@/components/Footer";
 import { Definition } from "@/components/Definition";
+import { DarkModeImage } from "@/components/DarkModeImage";
 
 const wyrdEpisodes = [
   {
@@ -50,10 +51,11 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       {/* Banner */}
-      <div className="w-full flex justify-center bg-white">
+      <div className="w-full flex justify-center bg-white dark:bg-black">
         <div className="max-w-2xl w-full py-8">
-          <Image
-            src="/wyrd-cover.png"
+          <DarkModeImage
+            lightSrc="/wyrd-cover.png"
+            darkSrc="/wyrd-cover-dark.png"
             alt="WYRD Banner"
             width={1920}
             height={400}
@@ -70,8 +72,9 @@ export default function Home() {
         </div>
 
         <div className="w-full my-12">
-          <Image
-            src="/line5.png"
+          <DarkModeImage
+            lightSrc="/line5.png"
+            darkSrc="/line5-dark.png"
             alt=""
             width={1200}
             height={20}
@@ -82,7 +85,7 @@ export default function Home() {
         {/* Header */}
         <header className="mb-16">
           <p className="text-lg leading-relaxed mb-6">
-            A weird host explores weird life trajectories.
+            A weird host explores weird life trajectories. I document the uncertainty, fear, and strength needed to pursue an original path so that others doing the same feel less alone.
           </p>
           <p className="text-lg leading-relaxed mb-6">
             Original interview series produced by{" "}
@@ -118,8 +121,9 @@ export default function Home() {
         </header>
 
         <div className="w-full my-12">
-          <Image
-            src="/line6.png"
+          <DarkModeImage
+            lightSrc="/line6.png"
+            darkSrc="/line6-dark.png"
             alt=""
             width={1200}
             height={20}
@@ -137,8 +141,9 @@ export default function Home() {
         </Section>
 
         <div className="w-full mt-4 mb-12">
-          <Image
-            src="/line7.png"
+          <DarkModeImage
+            lightSrc="/line7.png"
+            darkSrc="/line7-dark.png"
             alt=""
             width={1200}
             height={20}
@@ -160,8 +165,9 @@ export default function Home() {
         </Section>
 
         <div className="w-full mt-4 mb-6">
-          <Image
-            src="/line8.png"
+          <DarkModeImage
+            lightSrc="/line8.png"
+            darkSrc="/line8-dark.png"
             alt=""
             width={1200}
             height={20}

@@ -17,7 +17,11 @@ export const Definition = () => {
           </li>
           <li className="flex items-start">
             <span className="mr-3">•</span>
-            <span>root of the modern English word 'weird'</span>
+            <span>root of the modern English word <em>weird</em></span>
+          </li>
+          <li className="flex items-start">
+            <span className="mr-3">•</span>
+            <span>What You Really Doing?</span>
           </li>
         </ul>
       </div>

@@ -20,6 +20,15 @@ export const Footer = () => {
         >
           DM on X
         </a>
+        <span>·</span>
+        <a
+          href="https://sracha.substack.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-foreground transition-colors"
+        >
+          Read my overly personal <span className="underline">Substack</span>
+        </a>
       </div>
     </footer>
   );

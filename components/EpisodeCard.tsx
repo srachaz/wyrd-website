@@ -57,7 +57,7 @@ export const EpisodeCard = ({
       </div>
 
       {youtubeUrl && (
-        <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+        <div className="relative w-full overflow-hidden rounded-2xl" style={{ paddingBottom: "56.25%" }}>
           <iframe
             className="absolute top-0 left-0 w-full h-full"
             src={getYouTubeEmbedUrl(youtubeUrl)}

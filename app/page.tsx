@@ -27,23 +27,10 @@ const wyrdEpisodes = [
     description: "'It is now your life mission to make sure these people have nightmares about us.'",
     youtubeUrl: "https://www.youtube.com/watch?v=1aZOmwfEozY",
   },
-];
-
-const trollHighlights = [
   {
     title: "Eric Zhu, Sperm Racing Founder",
     description: "Diagnosing Eric with the DSM-5…",
     youtubeUrl: "https://www.youtube.com/watch?v=nwTZ3GBmrcw",
-  },
-  {
-    title: "Jess, Blockus CEO",
-    description: "Accidentally Rage-baiting X …",
-    tweetUrl: "https://x.com/sracha/status/1999243906584834245?s=20",
-  },
-  {
-    title: "Cayden & Eunice",
-    description: "Just a degenerate episode...",
-    youtubeUrl: "https://www.youtube.com/watch?v=ntvnLYKEz-Y",
   },
 ];
 
@@ -65,7 +52,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto py-16 px-6">
+      <div className="max-w-4xl mx-auto py-8 px-6">
         {/* What is WYRD Definition */}
         <div className="mb-8">
           <Definition />
@@ -84,36 +71,13 @@ export default function Home() {
 
         {/* Header */}
         <header className="mb-16">
-          <p className="text-lg leading-relaxed mb-6">
-            A weird host explores weird life trajectories. I document the uncertainty, fear, and strength needed to pursue an original path so that others doing the same feel less alone.
-          </p>
-          <p className="text-lg leading-relaxed mb-6">
-            Original interview series produced by{" "}
+          <p className="text-base leading-relaxed mb-6">
+            A weird host explores weird life trajectories. Read the{" "}
             <a
-              href="https://sracha.substack.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:opacity-70 transition-opacity"
+              href="/manifesto"
+              className="border-b border-foreground hover:opacity-70 transition-opacity"
             >
-              Sracha
-            </a>
-            , sponsored by{" "}
-            <a
-              href="https://succinct.xyz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:opacity-70 transition-opacity"
-            >
-              Succinct
-            </a>
-            {" "}& {" "}
-            <a
-              href="https://kalshi.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:opacity-70 transition-opacity"
-            >
-              Kalshi
+              WYRD manifesto
             </a>
             .
           </p>
@@ -131,36 +95,12 @@ export default function Home() {
           />
         </div>
 
-        {/* WYRD Highlights */}
-        <Section title="WYRD Highlights">
+        {/* WYRD Interviews */}
+        <Section title="WYRD Interviews">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {wyrdEpisodes.map((episode) => (
               <EpisodeCard key={episode.title} {...episode} />
             ))}
-          </div>
-        </Section>
-
-        <div className="w-full mt-4 mb-12">
-          <DarkModeImage
-            lightSrc="/line7.png"
-            darkSrc="/line7-dark.png"
-            alt=""
-            width={1200}
-            height={20}
-            className="w-full h-auto"
-          />
-        </div>
-
-        {/* Troll Highlights */}
-        <Section title="Troll Highlights">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="space-y-8">
-              <EpisodeCard {...trollHighlights[0]} />
-              <EpisodeCard {...trollHighlights[2]} />
-            </div>
-            <div>
-              <EpisodeCard {...trollHighlights[1]} />
-            </div>
           </div>
         </Section>
 

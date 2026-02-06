@@ -8,6 +8,16 @@ import { DarkModeImage } from "@/components/DarkModeImage";
 
 const wyrdEpisodes = [
   {
+    title: "Jayden, MOTS Podcast Host",
+    description: "Being at the center of niche SF technology culture",
+    youtubeUrl: "https://www.youtube.com/watch?v=Xeuz0tIcTHs",
+  },
+  {
+    title: "Skyler Chan, GRU Space Founder",
+    description: "Building the 1st Hotel on the Moon by 2032",
+    youtubeUrl: "https://www.youtube.com/watch?v=9P4ngc2NvAM",
+  },
+  {
     title: "Meow, Jupiter Exchange CEO",
     description: "Genuinely just me getting roasted by Meow for 40 minutes straight",
     youtubeUrl: "https://www.youtube.com/watch?v=p4Zyyua965Q",
@@ -31,6 +41,11 @@ const wyrdEpisodes = [
     title: "Eric Zhu, Sperm Racing Founder",
     description: "Diagnosing Eric with the DSM-5…",
     youtubeUrl: "https://www.youtube.com/watch?v=nwTZ3GBmrcw",
+  },
+  {
+    title: "Dris, Instinct CEO",
+    description: "Kicked out of high school to supporting 60k+ UGC creators",
+    youtubeUrl: "https://www.youtube.com/watch?v=dN6TvAxD9_k",
   },
 ];
 

@@ -25,43 +25,27 @@ export default function Manifesto() {
           <h1 className="text-4xl font-bold mb-8">WYRD Manifesto</h1>
 
           <p className="text-base leading-relaxed mb-6 italic">
-            "Everyone is looking for the highest, truest, expression of themselves as a human being." - Oprah
+            People often wander aimlessly. Know what you want and execute. Think about something, and it becomes real.
           </p>
 
           <p className="text-base leading-relaxed mb-6">
-            Okay I know this sounds dramatic, but my life was saved because I met some very weird people. They lived the most unimaginable lives.
+            3 years ago, I became extremely existential and thought about what I wanted. In the process, I figured out how to make money, how to gain freedom, and how to find my passion.
           </p>
 
           <p className="text-base leading-relaxed mb-6">
-            Until then, I didn't think I was capable of living an extraordinary life. But when you are exposed to these people, you learn that you are no different from them.
+            I left UCLA to create WYRD, because I am weird and I love talking to people.
           </p>
 
           <p className="text-base leading-relaxed mb-6">
-            I became very existential and thought deeply about life. My principle is simple: sit down, think about what you want, write it down, and go get it.
+            The pursuit of this path has been hard. You trade comfort for uncertainty, imposter syndrome, failure, loneliness, existential dread, feeling cringe ... trust me I know ALL these good feelings ¯(ツ)/¯
           </p>
 
           <p className="text-base leading-relaxed mb-6">
-            Small problem... it's actually very hard to know what you want. The luckiest people in the world are those whose ikigai (Japanese concept meaning a reason for being) is clear.
+            I want people to figure out what they want, chase it, and feel less alone doing it.
           </p>
 
           <p className="text-base leading-relaxed mb-6">
-            That's why it's critical that people think more! Do things to understand who they really are and discover what they want!
-          </p>
-
-          <p className="text-base leading-relaxed mb-6">
-            Chasing what you want takes you down an original path, which is hard and scary. You trade comfort for uncertainty, imposter syndrome, failure, existential dread, feeling cringe ... trust me I know ALL these good feelings ¯\_(ツ)_/¯
-          </p>
-
-          <p className="text-base leading-relaxed mb-6">
-            My mission is to document the weirdest people and their weird lives. The trajectories that make absolutely no sense.
-          </p>
-
-          <p className="text-base leading-relaxed mb-6">
-            I will show the real self-discovery, fear, and strength needed to find and walk the road less traveled.
-          </p>
-
-          <p className="text-base leading-relaxed mb-6 font-bold">
-            WYRD is to help the ones who want the unconventional path.
+            WYRD shows what it actually takes to walk an original path—through the weird people who've done it.
           </p>
         </article>
 

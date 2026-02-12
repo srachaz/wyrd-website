@@ -40,7 +40,7 @@ export const SocialLinks = () => {
         </a>
         <span className="text-muted-foreground">ฅ</span>
         <a
-          href="https://www.instagram.com/srachasauce/"
+          href="https://www.instagram.com/wyrdshow/"
           target="_blank"
           rel="noopener noreferrer"
           className="border-b border-foreground hover:opacity-70 transition-opacity"

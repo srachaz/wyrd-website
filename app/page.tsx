@@ -8,34 +8,14 @@ import { DarkModeImage } from "@/components/DarkModeImage";
 
 const wyrdEpisodes = [
   {
-    title: "Jayden, MOTS Podcast Host",
-    description: "Being at the center of niche SF technology culture",
-    youtubeUrl: "https://www.youtube.com/watch?v=Xeuz0tIcTHs",
-  },
-  {
-    title: "Skyler Chan, GRU Space Founder",
-    description: "Building the 1st Hotel on the Moon by 2032",
-    youtubeUrl: "https://www.youtube.com/watch?v=9P4ngc2NvAM",
-  },
-  {
-    title: "Meow, Jupiter Exchange CEO",
-    description: "Genuinely just me getting roasted by Meow for 40 minutes straight",
-    youtubeUrl: "https://www.youtube.com/watch?v=p4Zyyua965Q",
+    title: "Shane Fan, Founder & Influencer",
+    description: "Immigrating to US and graduating Berkeley at 18",
+    youtubeUrl: "https://www.youtube.com/watch?v=c3R-wg53jss&t=285s",
   },
   {
     title: "Justin Waldron, Zynga Co-Founder",
-    description: "Hearing Justin's crazy early conviction in Facebook and building games for a living",
+    description: "Early to Facebook and building games for a living",
     youtubeUrl: "https://www.youtube.com/watch?v=kVTBZCfny-A",
-  },
-  {
-    title: "Addison, Thunderhead Founder (Exited)",
-    description: "We got 10 years to escape the permanent underclass before AGI-ahhhh convo",
-    youtubeUrl: "https://www.youtube.com/watch?v=aRcMOiVgOD8",
-  },
-  {
-    title: "Mert, Helius Founder",
-    description: "'It is now your life mission to make sure these people have nightmares about us.'",
-    youtubeUrl: "https://www.youtube.com/watch?v=1aZOmwfEozY",
   },
   {
     title: "Eric Zhu, Sperm Racing Founder",
@@ -43,9 +23,19 @@ const wyrdEpisodes = [
     youtubeUrl: "https://www.youtube.com/watch?v=nwTZ3GBmrcw",
   },
   {
+    title: "Skyler Chan, GRU Space Founder",
+    description: "Building the 1st Hotel on the Moon by 2032",
+    youtubeUrl: "https://www.youtube.com/watch?v=9P4ngc2NvAM",
+  },
+  {
     title: "Dris, Instinct CEO",
     description: "Kicked out of high school to supporting 60k+ UGC creators",
     youtubeUrl: "https://www.youtube.com/watch?v=dN6TvAxD9_k",
+  },
+  {
+    title: "Meow, Jupiter Exchange CEO",
+    description: "Just me getting roasted by Meow for 40 minutes",
+    youtubeUrl: "https://www.youtube.com/watch?v=p4Zyyua965Q",
   },
 ];
 
@@ -111,7 +101,7 @@ export default function Home() {
         </div>
 
         {/* WYRD Interviews */}
-        <Section title="WYRD Interviews">
+        <Section title="Weirdest Interviews">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {wyrdEpisodes.map((episode) => (
               <EpisodeCard key={episode.title} {...episode} />

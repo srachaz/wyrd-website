@@ -29,7 +29,7 @@ export default function Manifesto() {
           </p>
 
           <p className="text-base leading-relaxed mb-6">
-            3 years ago, I became extremely existential and thought about what I wanted. In the process, I figured out how to make money, how to gain freedom, and how to find my passion.
+            Life is really weird. 3 years ago, I became deeply existential and introspected everyday on what I want. In the process, I made money, traveled the world, attained freedom, and recognized my passion.
           </p>
 
           <p className="text-base leading-relaxed mb-6">
@@ -41,11 +41,7 @@ export default function Manifesto() {
           </p>
 
           <p className="text-base leading-relaxed mb-6">
-            I want people to figure out what they want, chase it, and feel less alone doing it.
-          </p>
-
-          <p className="text-base leading-relaxed mb-6">
-            WYRD shows what it actually takes to walk an original path—through the weird people who've done it.
+            WYRD shares stories of how people strive towards the highest, truest expression themselves as human beings— and how to live a weird life.
           </p>
         </article>
 

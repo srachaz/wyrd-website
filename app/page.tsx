@@ -8,19 +8,19 @@ import { DarkModeImage } from "@/components/DarkModeImage";
 
 const wyrdEpisodes = [
   {
-    title: "Shane Fan, Founder & Influencer",
-    description: "Immigrating to US and graduating Berkeley at 18",
-    youtubeUrl: "https://www.youtube.com/watch?v=c3R-wg53jss&t=285s",
-  },
-  {
-    title: "Justin Waldron, Zynga Co-Founder",
-    description: "Early to Facebook and building games for a living",
-    youtubeUrl: "https://www.youtube.com/watch?v=kVTBZCfny-A",
-  },
-  {
     title: "Eric Zhu, Sperm Racing Founder",
     description: "Diagnosing Eric with the DSM-5…",
     youtubeUrl: "https://www.youtube.com/watch?v=nwTZ3GBmrcw",
+  },
+  {
+    title: "Justin Waldron, Zynga Co-Founder",
+    description: "Dropping out at 19 to build a gaming company",
+    youtubeUrl: "https://www.youtube.com/watch?v=kVTBZCfny-A",
+  },
+  {
+    title: "Ppl Pleasr, Shibuya Films Founder",
+    description: "Unemployed Artist to Emmy Winner",
+    youtubeUrl: "https://youtu.be/6XmJ-Yj1NO4?si=b4OXeiuMFda6HGTg",
   },
   {
     title: "Skyler Chan, GRU Space Founder",
@@ -28,14 +28,14 @@ const wyrdEpisodes = [
     youtubeUrl: "https://www.youtube.com/watch?v=9P4ngc2NvAM",
   },
   {
-    title: "Dris, Instinct CEO",
-    description: "Kicked out of high school to supporting 60k+ UGC creators",
-    youtubeUrl: "https://www.youtube.com/watch?v=dN6TvAxD9_k",
+    title: "Iyan Moon Yang, Model & 1M+ Influencer",
+    description: "Modeling for Dior at 17, gap year struggles",
+    youtubeUrl: "https://youtu.be/Qhs9zxsB4aE?si=sjp75biI9b_KpQ8k",
   },
   {
-    title: "Meow, Jupiter Exchange CEO",
-    description: "Just me getting roasted by Meow for 40 minutes",
-    youtubeUrl: "https://www.youtube.com/watch?v=p4Zyyua965Q",
+    title: "Shane Fan, 7M+ Followers",
+    description: "Graduating Berkeley at 18?",
+    youtubeUrl: "https://www.youtube.com/watch?v=c3R-wg53jss&t=285s",
   },
 ];
 
@@ -63,29 +63,8 @@ export default function Home() {
           <Definition />
         </div>
 
-        <div className="w-full my-12">
-          <DarkModeImage
-            lightSrc="/line5.png"
-            darkSrc="/line5-dark.png"
-            alt=""
-            width={1200}
-            height={20}
-            className="w-full h-auto"
-          />
-        </div>
-
         {/* Header */}
-        <header className="mb-16">
-          <p className="text-base leading-relaxed mb-6">
-            A weird host explores weird life trajectories. Read the{" "}
-            <a
-              href="/manifesto"
-              className="border-b border-foreground hover:opacity-70 transition-opacity"
-            >
-              WYRD manifesto
-            </a>
-            .
-          </p>
+        <header className="mb-8">
           <SocialLinks />
         </header>
 

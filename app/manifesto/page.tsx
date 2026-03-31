@@ -33,7 +33,7 @@ export default function Manifesto() {
           </p>
 
           <p className="text-base leading-relaxed mb-6">
-            I left UCLA to create WYRD, because I am weird and I love talking to people.
+            I left UCLA to create WYRD, because we need real stories on how to make weird life trajectories work. Also I&apos;m weird and I love talking to people.
           </p>
 
           <p className="text-base leading-relaxed mb-6">
@@ -43,6 +43,14 @@ export default function Manifesto() {
           <p className="text-base leading-relaxed mb-6">
             WYRD shares stories of how people strive towards the highest, truest expression themselves as human beings— and how to live a weird life.
           </p>
+
+          <h2 className="text-2xl font-bold mt-10 mb-6">Current Thoughts:</h2>
+          <ul className="list-disc pl-6 space-y-4 text-base leading-relaxed mb-6">
+            <li>There is a tradeoff between authenticity &amp; truth for brand &amp; reputation</li>
+            <li>I want this show to be a place of true self-expression. This is hard because you need self-confidence and most people are insecure.</li>
+            <li>I want people to figure out what they want, and go get it.</li>
+            <li>The people I find most interesting are artists, philosophers, personalities, and villains</li>
+          </ul>
         </article>
 
         <div className="w-full mt-12 mb-6">

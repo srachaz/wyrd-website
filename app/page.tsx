@@ -8,34 +8,52 @@ import { DarkModeImage } from "@/components/DarkModeImage";
 
 const wyrdEpisodes = [
   {
-    title: "Eric Zhu, Sperm Racing Founder",
-    description: "Diagnosing Eric with the DSM-5…",
-    youtubeUrl: "https://www.youtube.com/watch?v=nwTZ3GBmrcw",
+    title: "Shane Fan",
+    description:
+      "Graduated high school at 15, UC Berkeley at 18. Creator with 7M+ followers and 3B+ views. Founder & CEO of a stealth startup building onchain products. He's 23.",
+    youtubeUrl: "https://youtu.be/c3R-wg53jss?si=l4aFJlVy5qmEjn6e",
   },
   {
-    title: "Justin Waldron, Zynga Co-Founder",
-    description: "Dropping out at 19 to build a gaming company",
-    youtubeUrl: "https://www.youtube.com/watch?v=kVTBZCfny-A",
+    title: "pplpleasr (Emily Yang)",
+    description:
+      "Multidisciplinary artist and founder of Shibuya, a crowdfunding platform for independent filmmakers. Her anime White Rabbit became the first crypto project to win an Emmy.",
+    youtubeUrl: "https://youtu.be/6XmJ-Yj1NO4?si=h2P2mrGhsfz89NDr",
   },
   {
-    title: "Ppl Pleasr, Shibuya Films Founder",
-    description: "Unemployed Artist to Emmy Winner",
-    youtubeUrl: "https://youtu.be/6XmJ-Yj1NO4?si=b4OXeiuMFda6HGTg",
+    title: "Skyler Chan",
+    description:
+      "22-year-old who graduated Berkeley a year early to found GRU Space, building the first lunar hotel.",
+    youtubeUrl: "https://youtu.be/9P4ngc2NvAM?si=anUPCOEU57WCvVsT",
   },
   {
-    title: "Skyler Chan, GRU Space Founder",
-    description: "Building the 1st Hotel on the Moon by 2032",
-    youtubeUrl: "https://www.youtube.com/watch?v=9P4ngc2NvAM",
+    title: "Iyan Moon Yang",
+    description:
+      "20-year-old student and influencer signed with Ford Models, went viral for modeling for Dior at 16.",
+    youtubeUrl: "https://youtu.be/Qhs9zxsB4aE?si=29hn3bSx8HqfXL0u",
   },
   {
-    title: "Iyan Moon Yang, Model & 1M+ Influencer",
-    description: "Modeling for Dior at 17, gap year struggles",
-    youtubeUrl: "https://youtu.be/Qhs9zxsB4aE?si=sjp75biI9b_KpQ8k",
+    title: "Viraj Ala",
+    description:
+      "21-year-old who transferred into Berkeley to drop out and become a content creator interviewing billionaire CEOs all day and democratizing access to Silicon Valley.",
+    youtubeUrl: "https://youtu.be/ZNtY4pTEU6M?si=FlNQbveUVictYZpk",
   },
   {
-    title: "Shane Fan, 7M+ Followers",
-    description: "Graduating Berkeley at 18?",
-    youtubeUrl: "https://www.youtube.com/watch?v=c3R-wg53jss&t=285s",
+    title: "Gajesh Naik",
+    description:
+      "Built a DeFi protocol managing $7M at 13, Solana & FTX intern at 14, immigrated from India to America and now a research engineer at Eigen Labs. Just turned 18.",
+    youtubeUrl: "https://youtu.be/gDpQOrATd3I?si=Ryn8-uJwrYK8_jTF",
+  },
+  {
+    title: "Eric Zhu",
+    description:
+      "18-year-old founder who raised $10 million for Sperm Racing, previously built his first startup, Aviato, from a high school bathroom stall.",
+    youtubeUrl: "https://youtu.be/nwTZ3GBmrcw?si=YS5vV5EA3Jw557UI",
+  },
+  {
+    title: "Dris Elamri",
+    description:
+      "18-year-old CEO of Instinct (60K+ creators). Grew a YouTube channel to 200K subs in 9 months, made $50K/mo dropshipping, and got kicked out of high school for hacking water fountains.",
+    youtubeUrl: "https://youtu.be/dN6TvAxD9_k?si=nyta31TDsFFhY3qo",
   },
 ];
 

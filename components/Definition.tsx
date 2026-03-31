@@ -5,7 +5,7 @@ export const Definition = () => {
     <div className="mb-12">
       <div>
         <h3 className="text-5xl font-bold mb-4">WYRD</h3>
-        <p className="text-base mb-4">/weird/</p>
+        <p className="text-base mb-4">/pronounced &ldquo;weird&rdquo;/</p>
         <p className="text-base mb-4">
           noun: fate or destiny, root of the modern English word <em>weird</em>
         </p>

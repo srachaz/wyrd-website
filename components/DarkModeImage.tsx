@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import Image from "next/image";
 
 interface DarkModeImageProps {
@@ -13,6 +13,23 @@ interface DarkModeImageProps {
   priority?: boolean;
 }
 
+const colorSchemeQuery = "(prefers-color-scheme: dark)";
+
+function subscribeToColorScheme(callback: () => void) {
+  const mediaQuery = window.matchMedia(colorSchemeQuery);
+  mediaQuery.addEventListener("change", callback);
+
+  return () => mediaQuery.removeEventListener("change", callback);
+}
+
+function getColorSchemeSnapshot() {
+  return window.matchMedia(colorSchemeQuery).matches;
+}
+
+function getServerColorSchemeSnapshot() {
+  return false;
+}
+
 export const DarkModeImage = ({
   lightSrc,
   darkSrc,
@@ -22,19 +39,11 @@ export const DarkModeImage = ({
   className = "",
   priority = false,
 }: DarkModeImageProps) => {
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    // Check initial preference
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    setIsDark(mediaQuery.matches);
-
-    // Listen for changes
-    const handler = (e: MediaQueryListEvent) => setIsDark(e.matches);
-    mediaQuery.addEventListener("change", handler);
-
-    return () => mediaQuery.removeEventListener("change", handler);
-  }, []);
+  const isDark = useSyncExternalStore(
+    subscribeToColorScheme,
+    getColorSchemeSnapshot,
+    getServerColorSchemeSnapshot,
+  );
 
   return (
     <Image

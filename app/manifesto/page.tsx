@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { DarkModeImage } from "@/components/DarkModeImage";
-import { Footer } from "@/components/Footer";
 
 export default function Manifesto() {
   return (

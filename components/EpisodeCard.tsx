@@ -10,6 +10,14 @@ interface EpisodeCardProps {
   guest?: string;
 }
 
+type TwitterWindow = Window & {
+  twttr?: {
+    widgets?: {
+      load: () => void;
+    };
+  };
+};
+
 const getYouTubeEmbedUrl = (url: string) => {
   const videoId = url.split("v=")[1]?.split("&")[0] || url.split("/").pop()?.split("?")[0];
   return `https://www.youtube.com/embed/${videoId}`;
@@ -29,8 +37,10 @@ export const EpisodeCard = ({
   useEffect(() => {
     // Load Twitter widgets after component mounts
     const loadTwitterWidget = () => {
-      if ((window as any).twttr?.widgets) {
-        (window as any).twttr.widgets.load();
+      const twitterWindow = window as TwitterWindow;
+
+      if (twitterWindow.twttr?.widgets) {
+        twitterWindow.twttr.widgets.load();
       }
     };
 

@@ -16,6 +16,28 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Live YouTube Episodes
+
+The homepage fetches the latest long-form WYRD uploads server-side on every
+request. Set one of these credential paths in `.env.local` or in your hosting
+environment:
+
+```bash
+# Public YouTube Data API key path
+YOUTUBE_API_KEY=...
+YOUTUBE_CHANNEL_HANDLE=@WYRDshow
+```
+
+or reuse the OAuth files created by `wyrd-tech/metrics`:
+
+```bash
+YT_CLIENT_SECRET=/absolute/path/to/wyrd-tech/metrics/client_secret.json
+YT_TOKEN_FILE=/absolute/path/to/wyrd-tech/metrics/token.json
+```
+
+If credentials are missing or YouTube is unavailable, the page falls back to the
+previous curated episode list.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

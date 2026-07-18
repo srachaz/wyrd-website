@@ -1,16 +1,37 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 export const Footer = () => {
+  const [email, setEmail] = useState<string | null>(null);
+
+  useEffect(() => {
+    const u = "sarahrjzhang";
+    const d = "gmail.com";
+    setEmail(`${u}@${d}`);
+  }, []);
+
   return (
     <footer className="mt-6">
       <div className="flex items-center gap-6 text-sm text-muted-foreground">
-        <a
-          href="mailto:sarahrjzhang@gmail.com"
-          className="flex items-center gap-2 hover:text-foreground transition-colors"
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-          sarahrjzhang@gmail.com
-        </a>
+        {email ? (
+          <a
+            href={`mailto:${email}`}
+            className="flex items-center gap-2 hover:text-foreground transition-colors"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            {email}
+          </a>
+        ) : (
+          <span className="flex items-center gap-2">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            email
+          </span>
+        )}
         <span>·</span>
         <a
           href="https://x.com/wyrdshow"

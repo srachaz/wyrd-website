@@ -10,7 +10,7 @@ export const Definition = () => {
           noun: fate or destiny, root of the modern English word <em>weird</em>
         </p>
         <p className="text-base mb-4">
-          WYRD is a podcast sharing unheard stories on how to live a weird life.
+          WYRD is a show exploring the truth behind weird life trajectories.
         </p>
         <p className="text-base mb-4">
           <Link

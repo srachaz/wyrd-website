@@ -30,7 +30,7 @@ const varelaRound = Varela_Round({
 
 export const metadata: Metadata = {
   title: "WYRD - Weird Life Trajectories",
-  description: "An original interview series exploring weird life trajectories. Produced by Sracha, sponsored by Succinct and Kalshi.",
+  description: "An original interview series exploring weird life trajectories. Produced by Sracha.",
 };
 
 export default function RootLayout({
